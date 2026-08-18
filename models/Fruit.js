@@ -59,8 +59,8 @@ class Fruit {
         const deleteFruit = fruits.find(f => f.name.toLowerCase() === this.name.toLowerCase())
 
         if(deleteFruit){
-            //fruits.splice(fruits.indexOf(deleteFruit),1)
-            delete fruits[fruits.indexOf(deleteFruit)]
+            fruits.splice(fruits.indexOf(deleteFruit),1)
+            //delete fruits[fruits.indexOf(deleteFruit)]
         } else {
             throw "The fruit does exist"
         }
